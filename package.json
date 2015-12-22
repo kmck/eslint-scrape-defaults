@@ -5,7 +5,7 @@
   "main": "index.js",
   "preferGlobal": true,
   "bin": {
-    "eslint-config": "./bin/look-around-you.js"
+    "eslint-config": "./bin/scrape-defaults.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,7 +25,11 @@
       "browser": false,
       "node": true
     },
+    "globals": {
+      "Promise": true
+    },
     "rules": {
+      "no-console": 0,
       "comma-dangle": [
         2,
         "always"
