@@ -1,0 +1,42 @@
+{
+  "name": "eslint-scrape-defaults",
+  "version": "1.0.0",
+  "description": "Generates an .eslintrc config file with the recommended default values and pretty comments.",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "eslint-config": "./bin/look-around-you.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^1.10.3",
+    "lodash": "^3.10.1",
+    "minimist": "^1.2.0",
+    "word-wrap": "^1.1.0",
+    "yakuza": "^1.0.7"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "browser": false,
+      "node": true
+    },
+    "rules": {
+      "comma-dangle": [
+        2,
+        "always"
+      ],
+      "no-unused-vars": [
+        2,
+        {
+          "vars": "all",
+          "args": "none"
+        }
+      ]
+    }
+  }
+}
