@@ -5,6 +5,7 @@
 var _ = require('lodash');
 var fs = require('fs');
 var minimist = require('minimist');
+var JSON5 = require('json5');
 
 var generateEslintConfig = require('../lib/eslint-scrape-defaults');
 
@@ -14,7 +15,7 @@ var config = {};
 
 if (argv.config) {
     if (_.startsWith(argv.config, '{')) {
-        config = JSON.parse(argv.config);
+        config = JSON5.parse(argv.config);
     } else if (_.endsWith(argv.config, '.json')) {
         config = require(argv.config);
     } else {
