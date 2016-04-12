@@ -1,6 +1,6 @@
 {
   "name": "eslint-scrape-defaults",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates an .eslintrc config file with the recommended default values and pretty comments.",
   "main": "index.js",
   "preferGlobal": true,
@@ -13,8 +13,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "eslint": "^1.10.3",
-    "lodash": "^3.10.1",
+    "eslint": "^2.7.0",
+    "lodash": "^4.10.0",
     "minimist": "^1.2.0",
     "word-wrap": "^1.1.0",
     "yakuza": "^1.0.7"
