@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "eslint": "^2.9.0",
+    "expand-tilde": "^1.2.1",
     "json5": "^0.5.0",
     "lodash": "^4.12.0",
     "minimist": "^1.2.0",
